@@ -9,19 +9,18 @@ const MASTER_MAP = [
         "groupName": "School",
         "items":[
             {"name": "Canvas", "shortcutKey": "1", "url": "https://sbccd.instructure.com/"},
-            {"name": "School Drive", "shortcutKey": "2", "url": "https://drive.google.com/drive/u/2/"},
-            {"name": "Personal Drive", "shortcutKey": "3", "url": "https://drive.google.com/drive/u/0/"},
-            {"name": "WebAdvisor", "shortcutKey": "4", "url": "https://valleycollege.edu/webadvisor"},
-            {"name": "Github", "shortcutKey": "5", "url": "https://github.com/"}
+            {"name": "School Email", "shortcutKey": "2", "url": "https://mail.google.com/mail/u/2/#inbox"},
+            {"name": "Calender", "shortcutKey": "3", "url": "https://calendar.google.com/calendar/u/0/"},
+            {"name": "Github", "shortcutKey": "4", "url": "https://github.com/"}
         ]
     },
     {
-        "groupName": "Tools",
+        "groupName": "Music",
         "items":[
-            {"name": "Email", "shortcutKey": "q", "url": "https://mail.google.com/mail/u/0/#inbox"},
+            {"name": "Bandcamp", "shortcutKey": "q", "url": "https://bandcamp.com/kaycomm"},
             {"name": "Banking", "shortcutKey": "w", "url": "https://www.chase.com/"},
             {"name": "Fidelity", "shortcutKey": "e", "url": "https://www.fidelity.com/profile/"},
-            {"name": "PenFed", "shortcutKey": "r", "url": "https://www.penfed.org/"},
+            {"name": "Sitting on Clouds", "shortcutKey": "r", "url": "https://www.sittingonclouds.net/"},
             {"name": "Capital One", "shortcutKey": "t", "url": "https://www.capitalone.com/"}
         ]
     },
@@ -35,14 +34,14 @@ const MASTER_MAP = [
         ]
     },
     {
-        "groupName": "Boards",
+        "groupName": "Personal",
         "items":[
-            {"name": "Midnight", "shortcutKey": "z", "url": "https://midnight.pub/"},
-            {"name": "/A/", "shortcutKey": "x", "url": "https://boards.4channel.org/a/"},
-            {"name": "/G/", "shortcutKey": "c", "url": "https://boards.4channel.org/g/"},
-            {"name": "/VG/", "shortcutKey": "v", "url": "https://boards.4channel.org/vg/"},
-            {"name": "/JP/", "shortcutKey": "b", "url": "https://boards.4channel.org/jp/"}
-         ]
+            {"name": "Email", "shortcutKey": "q", "url": "https://mail.google.com/mail/u/0/#inbox"},
+            {"name": "Banking", "shortcutKey": "w", "url": "https://www.chase.com/"},
+            {"name": "Fidelity", "shortcutKey": "e", "url": "https://www.fidelity.com/profile/"},
+            {"name": "PenFed", "shortcutKey": "r", "url": "https://www.penfed.org/"},
+            {"name": "Capital One", "shortcutKey": "t", "url": "https://www.capitalone.com/"}
+        ]
     }
 ]
 
