@@ -15,6 +15,7 @@ body {
     background-color: var(--bg-color);
     background-size: cover;
     color: var(--text-color);
+    background-position: center top; 
 
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
