@@ -2,35 +2,16 @@ const NAME = "Kay";
 const WELCOME_MESSAGE_TEMPLATE = ["night", "morning", "afternoon", "evening"];
 
 const SHORTCUT_STARTER = 'tab' 
-const SHORTCUT_TIMEOUT = 2500;
+const SHORTCUT_TIMEOUT = 3500;
 
 const MASTER_MAP = [
     {
         "groupName": "School",
         "items":[
             {"name": "Canvas", "shortcutKey": "1", "url": "https://sbccd.instructure.com/"},
-            {"name": "School Email", "shortcutKey": "2", "url": "https://mail.google.com/mail/u/2/#inbox"},
-            {"name": "Calender", "shortcutKey": "3", "url": "https://calendar.google.com/calendar/u/0/"},
+            {"name": "EDU Email", "shortcutKey": "2", "url": "https://mail.google.com/mail/u/2/#inbox"},
+            {"name": "WebAdvisor", "shortcutKey": "3", "url": "https://valleycollege.edu/webadvisor"},
             {"name": "Github", "shortcutKey": "4", "url": "https://github.com/"}
-        ]
-    },
-    {
-        "groupName": "Music",
-        "items":[
-            {"name": "Bandcamp", "shortcutKey": "q", "url": "https://bandcamp.com/kaycomm"},
-            {"name": "Banking", "shortcutKey": "w", "url": "https://www.chase.com/"},
-            {"name": "Fidelity", "shortcutKey": "e", "url": "https://www.fidelity.com/profile/"},
-            {"name": "Sitting on Clouds", "shortcutKey": "r", "url": "https://www.sittingonclouds.net/"},
-            {"name": "Capital One", "shortcutKey": "t", "url": "https://www.capitalone.com/"}
-        ]
-    },
-    {
-        "groupName": "Media",
-        "items":[
-            {"name": "Youtube", "shortcutKey": "a", "url": "https://www.youtube.com/feed/subscriptions"},
-            {"name": "Twitch", "shortcutKey": "s", "url": "https://www.twitch.tv/"},
-            {"name": "Twitter", "shortcutKey": "d", "url": "https://www.twitter.com/home"},
-            {"name": "Reddit", "shortcutKey": "f", "url": "https://www.reddit.com/"}
         ]
     },
     {
@@ -38,9 +19,17 @@ const MASTER_MAP = [
         "items":[
             {"name": "Email", "shortcutKey": "q", "url": "https://mail.google.com/mail/u/0/#inbox"},
             {"name": "Banking", "shortcutKey": "w", "url": "https://www.chase.com/"},
-            {"name": "Fidelity", "shortcutKey": "e", "url": "https://www.fidelity.com/profile/"},
-            {"name": "PenFed", "shortcutKey": "r", "url": "https://www.penfed.org/"},
-            {"name": "Capital One", "shortcutKey": "t", "url": "https://www.capitalone.com/"}
+            {"name": "Calender", "shortcutKey": "e", "url": "https://calendar.google.com/calendar/u/0/"},
+            {"name": "AniList", "shortcutKey": "r", "url": "https://anilist.co/user/KayQween/"},
+        ]
+    },
+    {
+        "groupName": "Media",
+        "items":[
+            {"name": "Youtube", "shortcutKey": "a", "url": "https://www.youtube.com/feed/subscriptions"},
+            {"name": "Twitch", "shortcutKey": "s", "url": "https://www.twitch.tv/"},
+            {"name": "Reddit", "shortcutKey": "d", "url": "https://www.reddit.com/"},
+            {"name": "Bandcamp", "shortcutKey": "f", "url": "https://bandcamp.com/kaycomm"},
         ]
     }
 ]
@@ -54,7 +43,7 @@ let listenerTimeout;
 
 function setupWelcomeMessage(){
     let curHours = new Date().getHours();
-    curHours = Math.floor(curHours/6); // Simply dividing current hours by 6 proves to be a good enough aproximation.
+    curHours = Math.floor(curHours/6); // dividing current hours by 6 is a good enough aproximation.
     if (curHours == 4) curHours = 3;
     let welcome = "Good " + WELCOME_MESSAGE_TEMPLATE[curHours] + " " + NAME;
     document.getElementById("welcome-string").innerHTML = welcome;
