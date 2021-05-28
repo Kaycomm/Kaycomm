@@ -5,7 +5,7 @@
     --bg-color: #000000;
     --text-color: #dddddd;
     --bg-image: url("assets/bg.png");
-    --SHORTCUT_TIMEOUT: 2.0s;
+    --SHORTCUT_TIMEOUT: 3.0s;
 }
 body {
     padding: 0;
@@ -94,8 +94,8 @@ a {
     to   { opacity: 1; }
 }
 @keyframes pulse {
-    0% { opacity: 0; }
-    20% { opacity: 0.3; }
-    80% { opacity: 0.3; }
+    0% { opacity: 0.4; }
+    20% { opacity: 0.4; }
+    80% { opacity: 0.4; }
     100%   { opacity: 0; }
 }
